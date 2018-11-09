@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/testingbot/nightwatch-example.svg?branch=master)](https://travis-ci.org/testingbot/nightwatch-example)
+
 ## TestingBot - NightWatch Example
 
 TestingBot provides an online grid of browsers and mobile devices to run Automated tests on via Selenium WebDriver.
