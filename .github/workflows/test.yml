@@ -14,3 +14,6 @@ jobs:
           node-version: '22.x'
       - run: npm ci
       - run: npm test
+        env:
+          TESTINGBOT_KEY: ${{ secrets.TESTINGBOT_KEY }}
+          TESTINGBOT_SECRET: ${{ secrets.TESTINGBOT_SECRET }}
