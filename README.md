@@ -1,3 +1,5 @@
+[![NodeJS Tests](https://github.com/testingbot/nightwatch-example/actions/workflows/test.yml/badge.svg)](https://github.com/testingbot/nightwatch-example/actions/workflows/test.yml)
+
 ## TestingBot - NightWatch Example
 
 TestingBot offers an online grid of browsers and mobile devices for running automated tests using Nightwatch.
