@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/testingbot/nightwatch-example.svg?branch=master)](https://travis-ci.org/testingbot/nightwatch-example)
-
 ## TestingBot - NightWatch Example
 
-TestingBot provides an online grid of browsers and mobile devices to run Automated tests on via Selenium WebDriver.
-This example demonstrates how to use NightWatwch to run a test in parallel across several browsers.
+TestingBot offers an online grid of browsers and mobile devices for running automated tests using Nightwatch.
+This example repository demonstrates how to use Nightwatch to execute tests in parallel across multiple browsers on TestingBot.
 
 ### Environment Setup
 
@@ -16,8 +14,8 @@ This example demonstrates how to use NightWatwch to run a test in parallel acros
 2. TestingBot Credentials
     * In the terminal export your TestingBot Credentials as environmental variables:
     ```
-    $ export TB_KEY=<your TestingBot Key>
-    $ export TB_SECRET=<your TestingBot Secret>
+    $ export TESTINGBOT_KEY=<your TestingBot Key>
+    $ export TESTINGBOT_SECRET=<your TestingBot Secret>
     ```
 3. Project Dependencies
     * Install Node modules
@@ -25,19 +23,22 @@ This example demonstrates how to use NightWatwch to run a test in parallel acros
     $ npm install
     ```
 
-
-
 ### Running Tests
+
+* Run one test:
+    ```
+    $ npm run single
+    ```
 
 * Tests in Parallel:
     ```
-    $ ./node_modules/.bin/nightwatch -e chrome,firefox,internet_explorer_edge tests
+    $ npm run parallel
     ```
 
 You will see the test result in the [TestingBot Dashboard](https://testingbot.com/members/)
 
 ### Resources
-##### [TestingBot Documentation](https://testingbot.com/support/getting-started/nightwatch.html)
+##### [TestingBot Nightwatch Documentation](https://testingbot.com/support/getting-started/nightwatch.html)
 
 ##### [SeleniumHQ Documentation](http://www.seleniumhq.org/docs/)
 

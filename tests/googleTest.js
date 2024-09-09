@@ -1,24 +1,18 @@
-var https = require('https');
+const https = require('https');
 
 module.exports = {
-
     '@tags': ['test'],
 
     'Google': function(client) {
         client
-            .url('https://www.google.com/ncr')
+            .url('https://testingbot.com')
             .waitForElementVisible('body', 1000)
-            .setValue('input[type=text]', 'TestingBot\n')
-            .pause(1000)
-            .assert.title('TestingBot - Google Search')
+            .assert.textContains('body', 'TestingBot')
             .end();
     },
 
     afterEach: function(client, done) {
         client.customTestingBotEnd();
-
-        setTimeout(function() {
-            done();
-        }, 1000);
+        done();
     }
 };

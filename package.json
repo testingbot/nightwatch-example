@@ -1,13 +1,23 @@
 {
   "name": "JS-Nightwatch.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "NightWatch examples for TestingBot",
   "main": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -e chrome,internet_explorer_edge tests"
+    "test": "npm run single && npm run parallel",
+    "single": "nightwatch --test ./tests/single/single_test.js --env testingbot.chrome",
+    "parallel": "nightwatch --test ./tests/single/single_test.js  --env testingbot.chrome,testingbot.edge,testingbot.firefox"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/testingbot/nightwatch-example"
+  },
+  "dependencies": {
+    "testingbot-api": "^1.0.9",
+    "nightwatch": "3.7.0"
   },
   "devDependencies": {
-    "testingbot-api": "1.0.5",
-    "nightwatch": "0.9.21"
+    "cross-env": "^7.0.3"
   }
 }
