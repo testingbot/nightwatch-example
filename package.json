@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "NightWatch examples for TestingBot",
   "main": "",
+  "author": "TestingBot",
   "scripts": {
-    "test": "npm run single && npm run parallel",
+    "test": "npm run single",
     "single": "nightwatch --test ./tests/single/single_test.js --env testingbot.chrome",
     "parallel": "nightwatch --test ./tests/single/single_test.js  --env testingbot.chrome,testingbot.edge,testingbot.firefox"
   },
