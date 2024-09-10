@@ -2,8 +2,8 @@ exports.command = function(callback) {
 	const TestingBot = require("testingbot-api");
 
 	const tb = new TestingBot({
-		api_key: process.env.TB_KEY,
-		api_secret: process.env.TB_SECRET
+		api_key: process.env.TESTINGBOT_KEY,
+		api_secret: process.env.TESTINGBOT_SECRET
 	});
 
 	const sessionid = this.capabilities['webdriver.remote.sessionid'],

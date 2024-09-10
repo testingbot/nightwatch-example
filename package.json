@@ -6,8 +6,8 @@
   "author": "TestingBot",
   "scripts": {
     "test": "npm run single",
-    "single": "nightwatch --test ./tests/single/single_test.js --env testingbot.chrome",
-    "parallel": "nightwatch --test ./tests/single/single_test.js  --env testingbot.chrome,testingbot.edge,testingbot.firefox"
+    "single": "nightwatch --test ./tests/single_test.js --env testingbot.chrome",
+    "parallel": "nightwatch --test ./tests/single_test.js  --env testingbot.chrome,testingbot.edge,testingbot.firefox"
   },
   "license": "MIT",
   "repository": {
@@ -16,9 +16,6 @@
   },
   "dependencies": {
     "testingbot-api": "^1.0.9",
-    "nightwatch": "3.7.0"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
+    "nightwatch": "^3.7.0"
   }
 }
